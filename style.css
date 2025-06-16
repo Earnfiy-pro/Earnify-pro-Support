@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans Bengali', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e6f0fa 0%, #f5f7fa 100%);
+  color: #2d3436;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(90deg, #4a90e2, #74b9ff);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 6px solid #2f6eb5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+.container {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  margin-bottom: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+  color: #4a90e2;
+  margin-top: 0;
+  font-size: 1.8em;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.card h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #4a90e2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-method {
+  background: #f8fbff;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #4a90e2;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.contact-method:hover {
+  background: #e6f0fa;
+  transform: translateX(5px);
+}
+
+.contact-method i {
+  color: #4a90e2;
+  font-size: 1.5em;
+}
+
+.contact-method a {
+  color: #4a90e2;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-method a:hover {
+  color: #2f6eb5;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #4a90e2, #74b9ff);
+  color: white;
+  font-size: 15px;
+  border-top: 4px solid #2f6eb5;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .contact-method {
+    padding: 15px;
+  }
+}
